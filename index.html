@@ -148,7 +148,22 @@
           <div class="row">
             <div class="col-md-6 col-lg-4 mb-3">
               <div class="keyboard-box">
+                <h4 class="keyboard-name">Womier RGB</h4>
+                <img src="/img/keyboards/1.png" alt="Womier RGB" class="keyboard-img" />
+                <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Red Dragon</h4>
+                <img src="/img/keyboards/2.png" alt="Red Dragon" class="keyboard-img" />
+                <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="keyboard-box">
                 <h4 class="keyboard-name">Keychron K2</h4>
+                <img src="/img/keyboards/3.png" alt="keyboard 1" class="keyboard-img" />
                 <a href="" class="btn btn-light keyboard-detail-button">Show Details</a>
               </div>
             </div>
@@ -355,6 +370,17 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- Titl JS -->
+    <script type="text/javascript" src="/js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 25,
+        speed: 400,
+        scale: 1.1,
+        glare: true,
       });
     </script>
   </body>
